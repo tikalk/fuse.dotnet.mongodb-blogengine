@@ -7,32 +7,22 @@ namespace Tikal
 {
     public partial class MongoDBBlogProvider : BlogProvider
     {
+
+        internal string _Folder
+        {
+            get
+            {
+                string p = StorageLocation().Replace("~/", "");
+                return System.IO.Path.Combine(System.Web.HttpRuntime.AppDomainAppPath, p);
+            }
+        }
+
         public override void DeleteBlogRollItem(BlogEngine.Core.BlogRollItem blogRollItem)
         {
             throw new NotImplementedException();
         }
 
-        public override void DeleteCategory(BlogEngine.Core.Category category)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void DeleteProfile(BlogEngine.Core.AuthorProfile profile)
-        {
-            throw new NotImplementedException();
-        }
-
         public override List<BlogEngine.Core.BlogRollItem> FillBlogRoll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override List<BlogEngine.Core.Category> FillCategories()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override List<BlogEngine.Core.AuthorProfile> FillProfiles()
         {
             throw new NotImplementedException();
         }
@@ -43,16 +33,6 @@ namespace Tikal
         }
 
         public override void InsertBlogRollItem(BlogEngine.Core.BlogRollItem blogRollItem)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void InsertCategory(BlogEngine.Core.Category category)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void InsertProfile(BlogEngine.Core.AuthorProfile profile)
         {
             throw new NotImplementedException();
         }
@@ -70,7 +50,7 @@ namespace Tikal
 
         public override System.Collections.Specialized.StringCollection LoadStopWords()
         {
-            throw new NotImplementedException();
+            return new System.Collections.Specialized.StringCollection();
         }
 
         public override void SavePingServices(System.Collections.Specialized.StringCollection services)
@@ -83,37 +63,17 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
-        public override BlogEngine.Core.Category SelectCategory(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override BlogEngine.Core.AuthorProfile SelectProfile(string id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override BlogEngine.Core.Referrer SelectReferrer(Guid Id)
-        {
-            throw new NotImplementedException();
-        }
-
         public override void UpdateBlogRollItem(BlogEngine.Core.BlogRollItem blogRollItem)
         {
             throw new NotImplementedException();
         }
 
-        public override void UpdateCategory(BlogEngine.Core.Category category)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void UpdateProfile(BlogEngine.Core.AuthorProfile profile)
-        {
-            throw new NotImplementedException();
-        }
-
         public override void UpdateReferrer(BlogEngine.Core.Referrer referrer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override BlogEngine.Core.Referrer SelectReferrer(Guid Id)
         {
             throw new NotImplementedException();
         }

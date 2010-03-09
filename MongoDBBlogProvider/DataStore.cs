@@ -63,6 +63,8 @@ namespace Tikal
 
                 var res = new Document();
                 res["Settings"] = objectXML;
+                res["ExtensionType"] = exType;
+                res["ExtensionId"] = exId;
 
                 coll.Update(res, spec, UpdateFlags.Upsert);
             }

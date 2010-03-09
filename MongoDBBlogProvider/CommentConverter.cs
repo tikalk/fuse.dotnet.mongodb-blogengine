@@ -42,38 +42,47 @@ namespace Tikal
 
 
             // Tags
-            string[] tags = (string[])doc["tags"];
-            foreach (string tag in tags)
+            if (doc["tags"] is string[])
             {
-                if (!string.IsNullOrEmpty(tag))
-                    post.Tags.Add(tag);
+                string[] tags = (string[])doc["tags"];
+                foreach (string tag in tags)
+                {
+                    if (!string.IsNullOrEmpty(tag))
+                        post.Tags.Add(tag);
+                }
             }
 
             // categories
-            string[] categories = (string[])doc["categories"];
-            foreach (string category in categories)
+            if (doc["categories"] is string[])
             {
-                Guid key = new Guid(category);
-                Category cat = Category.GetCategory(key);
-                if (cat != null)
-                    post.Categories.Add(cat);
+                string[] categories = (string[])doc["categories"];
+                foreach (string category in categories)
+                {
+                    Guid key = new Guid(category);
+                    Category cat = Category.GetCategory(key);
+                    if (cat != null)
+                        post.Categories.Add(cat);
+                }
             }
 
             // Notification e-mails
-            string[] notifications = (string[])doc["notifications"];
-            foreach (string notification in notifications)
+            if (doc["notifications"] is string[])
             {
-                post.NotificationEmails.Add(notification);
+                string[] notifications = (string[])doc["notifications"];
+                foreach (string notification in notifications)
+                {
+                    post.NotificationEmails.Add(notification);
+                }
             }
 
-            // comments			
-            Document[] docComments = (Document[])doc["comments"];
-            foreach (Document docComment in docComments)
-            {
-                Comment comment = docComment.ToComment();
-                comment.Parent = post;
-                post.Comments.Add(comment);
-            }
+            //// comments			
+            //Document[] docComments = (Document[])doc["comments"];
+            //foreach (Document docComment in docComments)
+            //{
+            //    Comment comment = docComment.ToComment();
+            //    comment.Parent = post;
+            //    post.Comments.Add(comment);
+            //}
 
             return post;
         }
@@ -81,6 +90,8 @@ namespace Tikal
         public static Document ToDocument(this Post post)
         {
             Document doc = new Document();
+
+            doc["id"] = post.Id;
 
             if (post.Title != null)
                 doc["title"] = post.Title;
@@ -100,40 +111,36 @@ namespace Tikal
             if (post.Author != null)
                 doc["author"] = post.Author;
 
-            if (post.IsPublished != null)
-                doc["ispublished"] = post.IsPublished;
+            //    doc["ispublished"] = post.IsPublished;
 
-            if (post.IsCommentsEnabled != null)
-                doc["iscommentsenabled"] = post.IsCommentsEnabled;
+            //    doc["iscommentsenabled"] = post.IsCommentsEnabled;
 
-            if (post.Raters != null)
-                doc["raters"] = post.Raters;
+            //    doc["raters"] = post.Raters;
 
-            if (post.Rating != null)
-                doc["rating"] = post.Rating;
+            //    doc["rating"] = post.Rating;
 
-            if (post.Slug != null)
-                doc["slug"] = post.Slug;
+            //if (post.Slug != null)
+            //    doc["slug"] = post.Slug;
 
             if (post.Tags != null)
                 doc["tags"] = post.Tags.ToArray();
 
-            if (post.Categories != null)
-                doc["categories"] = post.Categories.Select(p => p.Id).ToArray();
+            //if (post.Categories != null)
+            //    doc["categories"] = post.Categories.Select(p => p.Id).ToArray();
 
-            if (post.NotificationEmails != null)
-                doc["notifications"] = post.NotificationEmails.ToArray();
+            //if (post.NotificationEmails != null)
+            //    doc["notifications"] = post.NotificationEmails.ToArray();
 
-            if (post.Comments != null)
-            {
-                List<Document> docComment = new List<Document>();
-                foreach (Comment comment in post.Comments)
-                {
-                    Document docCom = comment.ToDocument();
-                    doc.Add("comments", docCom);
-                }
-                doc["comments"] = docComment.ToArray();
-            }
+            //if (post.Comments != null)
+            //{
+            //    List<Document> docComment = new List<Document>();
+            //    foreach (Comment comment in post.Comments)
+            //    {
+            //        Document docCom = comment.ToDocument();
+            //        doc.Add("comments", docCom);
+            //    }
+            //    doc["comments"] = docComment.ToArray();
+            //}
             return doc;
         }
 
