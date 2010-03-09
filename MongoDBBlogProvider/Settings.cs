@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using MongoDB.Driver;
 using System.Collections.Specialized;
+using MongoDB.Driver;
 
 namespace Tikal
 {
@@ -11,32 +8,37 @@ namespace Tikal
     {
         public override System.Collections.Specialized.StringDictionary LoadSettings()
         {
-            var db = ConnectDB();
+            StringDictionary dic;
 
-            var coll = db.GetCollection("settings");
-
-            var dic = new StringDictionary();
-
-            foreach (var el in coll.FindAll().Documents)
+            using (var mongo = new MongoDbWr())
             {
-                dic.Add((string)el["name"], (string)el["value"]);
+                var coll = mongo.BlogDB.GetCollection("settings");
+
+                dic = new StringDictionary();
+
+                foreach (var el in coll.FindAll().Documents)
+                {
+                    dic.Add((string)el["name"], (string)el["value"]);
+                }
             }
-
             return dic;
-        }
-
-        private Database ConnectDB()
-        {
-            Mongo mongo = new Mongo();
-            mongo.Connect();
-
-            var db = mongo.getDB("BlogDB");
-            return db;
         }
 
         public override void SaveSettings(System.Collections.Specialized.StringDictionary settings)
         {
-            throw new NotImplementedException();
+            using (var mongo = new MongoDbWr())
+            {
+                var coll = mongo.BlogDB.GetCollection("settings");
+
+                foreach (string key in settings.Keys)
+                {
+                    Document doc = new Document();
+                    doc.Append("name", key);
+                    doc.Append("value", settings[key]);
+
+                    coll.Insert(doc);
+                }
+            }
         }
 
         public override string StorageLocation()

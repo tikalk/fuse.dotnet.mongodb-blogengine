@@ -1,15 +1,15 @@
-﻿using Tikal;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BlogEngine.Core;
+﻿using System;
 using System.Collections.Generic;
-using BlogEngine.Core.DataStore;
 using System.Collections.Specialized;
-using System;
+using BlogEngine.Core;
+using BlogEngine.Core.DataStore;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Tikal;
 
 namespace MongoDBBlogProviderTest
 {
-    
-    
+
+
     /// <summary>
     ///This is a test class for MongoDBBlogProviderTest and is intended
     ///to contain all MongoDBBlogProviderTest Unit Tests
@@ -265,7 +265,9 @@ namespace MongoDBBlogProviderTest
         public void SaveSettingsTest()
         {
             MongoDBBlogProvider target = new MongoDBBlogProvider(); // TODO: Initialize to an appropriate value
-            StringDictionary settings = null; // TODO: Initialize to an appropriate value
+            StringDictionary settings = new StringDictionary();
+            settings.Add("key1", "value1");
+            settings.Add("key2", "value2");
             target.SaveSettings(settings);
             Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
@@ -315,7 +317,7 @@ namespace MongoDBBlogProviderTest
         [TestMethod()]
         public void LoadSettingsTest()
         {
-            MongoDBBlogProvider target = new MongoDBBlogProvider(); 
+            MongoDBBlogProvider target = new MongoDBBlogProvider();
             StringDictionary actual;
             actual = target.LoadSettings();
 
