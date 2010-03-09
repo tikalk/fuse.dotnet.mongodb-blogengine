@@ -17,11 +17,6 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
-        public override void DeletePage(BlogEngine.Core.Page page)
-        {
-            throw new NotImplementedException();
-        }
-
         public override void DeletePost(BlogEngine.Core.Post post)
         {
             throw new NotImplementedException();
@@ -38,11 +33,6 @@ namespace Tikal
         }
 
         public override List<BlogEngine.Core.Category> FillCategories()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override List<BlogEngine.Core.Page> FillPages()
         {
             throw new NotImplementedException();
         }
@@ -68,11 +58,6 @@ namespace Tikal
         }
 
         public override void InsertCategory(BlogEngine.Core.Category category)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void InsertPage(BlogEngine.Core.Page page)
         {
             throw new NotImplementedException();
         }
@@ -118,11 +103,6 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
-        public override BlogEngine.Core.Page SelectPage(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
         public override BlogEngine.Core.Post SelectPost(Guid id)
         {
             throw new NotImplementedException();
@@ -144,11 +124,6 @@ namespace Tikal
         }
 
         public override void UpdateCategory(BlogEngine.Core.Category category)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void UpdatePage(BlogEngine.Core.Page page)
         {
             throw new NotImplementedException();
         }
