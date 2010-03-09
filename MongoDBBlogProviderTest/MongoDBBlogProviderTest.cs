@@ -269,7 +269,6 @@ namespace MongoDBBlogProviderTest
             settings.Add("key1", "value1");
             settings.Add("key2", "value2");
             target.SaveSettings(settings);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
 
         /// <summary>
@@ -322,6 +321,8 @@ namespace MongoDBBlogProviderTest
             actual = target.LoadSettings();
 
             Assert.IsNotNull(actual);
+            Assert.AreNotEqual(actual.Count, 0);
+
         }
 
         /// <summary>
@@ -385,9 +386,15 @@ namespace MongoDBBlogProviderTest
         public void InsertPostTest()
         {
             MongoDBBlogProvider target = new MongoDBBlogProvider(); // TODO: Initialize to an appropriate value
-            Post post = null; // TODO: Initialize to an appropriate value
+            Post post = new Post();
+            post.Id = new Guid();
+            post.Title = "tittle1";
+            post.Tags.Add("tag1");
+            post.Tags.Add("tag2");
+
+            post.Comments.Add(new Comment() { Id = new Guid(), Content = "content1" });
+            post.Comments.Add(new Comment() { Id = new Guid(), Content = "content2" });
             target.InsertPost(post);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
 
         /// <summary>

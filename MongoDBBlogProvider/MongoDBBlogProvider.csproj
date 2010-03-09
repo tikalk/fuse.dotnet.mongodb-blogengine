@@ -61,8 +61,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentConverter.cs" />
     <Compile Include="MongoDBBlogProvider.cs" />
     <Compile Include="MongoDbWr.cs" />
+    <Compile Include="Posts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
   </ItemGroup>
