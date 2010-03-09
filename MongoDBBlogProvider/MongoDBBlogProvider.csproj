@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommentConverter.cs" />
+    <Compile Include="DataStore.cs" />
     <Compile Include="MongoDBBlogProvider.cs" />
     <Compile Include="MongoDbWr.cs" />
     <Compile Include="Posts.cs" />
