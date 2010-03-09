@@ -1,0 +1,5 @@
+BlogEngine.Web/bin/MongoDBBlogProvider.dll
+BlogEngine.Web/bin/MongoDBBlogProvider.pdb
+*.suo
+MongoDBBlogProvider/bin/
+MongoDBBlogProvider/obj/
