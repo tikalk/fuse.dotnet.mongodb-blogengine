@@ -5,7 +5,7 @@ using BlogEngine.Core.Providers;
 
 namespace Tikal
 {
-    public class MongoDBBlogProvider : BlogProvider
+    public partial class MongoDBBlogProvider : BlogProvider
     {
         public override void DeleteBlogRollItem(BlogEngine.Core.BlogRollItem blogRollItem)
         {
@@ -102,10 +102,6 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
-        public override System.Collections.Specialized.StringDictionary LoadSettings()
-        {
-            throw new NotImplementedException();
-        }
 
         public override System.Collections.Specialized.StringCollection LoadStopWords()
         {
@@ -118,11 +114,6 @@ namespace Tikal
         }
 
         public override void SavePingServices(System.Collections.Specialized.StringCollection services)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void SaveSettings(System.Collections.Specialized.StringDictionary settings)
         {
             throw new NotImplementedException();
         }
@@ -158,11 +149,6 @@ namespace Tikal
         }
 
         public override BlogEngine.Core.Referrer SelectReferrer(Guid Id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override string StorageLocation()
         {
             throw new NotImplementedException();
         }

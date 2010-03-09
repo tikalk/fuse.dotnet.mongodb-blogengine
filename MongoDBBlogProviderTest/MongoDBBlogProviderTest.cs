@@ -315,12 +315,11 @@ namespace MongoDBBlogProviderTest
         [TestMethod()]
         public void LoadSettingsTest()
         {
-            MongoDBBlogProvider target = new MongoDBBlogProvider(); // TODO: Initialize to an appropriate value
-            StringDictionary expected = null; // TODO: Initialize to an appropriate value
+            MongoDBBlogProvider target = new MongoDBBlogProvider(); 
             StringDictionary actual;
             actual = target.LoadSettings();
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+
+            Assert.IsNotNull(actual);
         }
 
         /// <summary>

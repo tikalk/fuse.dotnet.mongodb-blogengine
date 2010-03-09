@@ -3,3 +3,6 @@ BlogEngine.Web/bin/MongoDBBlogProvider.pdb
 *.suo
 MongoDBBlogProvider/bin/
 MongoDBBlogProvider/obj/
+MongoDBBlogProviderTest/bin/
+MongoDBBlogProviderTest/obj/
+TestResults/
