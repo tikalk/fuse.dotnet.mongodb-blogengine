@@ -4,6 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlogEngine.Web", "BlogEngine.Web\", "{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFramework = "2.0"
+		ProjectReferences = "{C16D749E-1E51-460B-AB3F-5CED873692F0}|MongoDBBlogProvider.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/BlogEngine.Web"
 		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\tikal\fuse.dotnet.mongodb-blogengine\BlogEngine.Web\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\BlogEngine.Web\"
@@ -21,13 +22,38 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlogEngine.Web", "BlogEngin
 		VWDPort = "51768"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDBBlogProvider", "MongoDBBlogProvider\MongoDBBlogProvider.csproj", "{C16D749E-1E51-460B-AB3F-5CED873692F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Debug|.NET.ActiveCfg = Debug|.NET
 		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Debug|.NET.Build.0 = Debug|.NET
+		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Release|.NET.ActiveCfg = Debug|.NET
+		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Release|.NET.Build.0 = Debug|.NET
+		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{C16D749E-1E51-460B-AB3F-5CED873692F0}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{C16D749E-1E51-460B-AB3F-5CED873692F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C16D749E-1E51-460B-AB3F-5CED873692F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C16D749E-1E51-460B-AB3F-5CED873692F0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C16D749E-1E51-460B-AB3F-5CED873692F0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C16D749E-1E51-460B-AB3F-5CED873692F0}.Release|.NET.ActiveCfg = Release|Any CPU
+		{C16D749E-1E51-460B-AB3F-5CED873692F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C16D749E-1E51-460B-AB3F-5CED873692F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C16D749E-1E51-460B-AB3F-5CED873692F0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C16D749E-1E51-460B-AB3F-5CED873692F0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
