@@ -397,9 +397,13 @@ namespace MongoDBBlogProviderTest
         public void InsertPageTest()
         {
             MongoDBBlogProvider target = new MongoDBBlogProvider(); // TODO: Initialize to an appropriate value
-            Page page = null; // TODO: Initialize to an appropriate value
+            Page page = new Page
+            {
+                Title="test title",
+                Description="test desc",
+                Content="test content",
+            };
             target.InsertPage(page);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
 
         /// <summary>

@@ -18,7 +18,7 @@ namespace Tikal
                 var coll = mongo.BlogDB.GetCollection(COLLECTION_PAGES);
 
                 var spec = new Document();
-                spec["Id"] = id.ToString();
+                spec["Id"] = id;
 
                 var doc = coll.FindOne(spec);
 
@@ -28,7 +28,14 @@ namespace Tikal
 
         public override void InsertPage(BlogEngine.Core.Page page)
         {
-            throw new NotImplementedException();
+            using (var mongo = new MongoDbWr())
+            {
+                var coll = mongo.BlogDB.GetCollection(COLLECTION_PAGES);
+
+                var record = PageToDocument(page);
+
+                coll.Insert(record);
+            }
         }
 
         public override void DeletePage(BlogEngine.Core.Page page)
@@ -51,22 +58,42 @@ namespace Tikal
             }
         }
 
+        private Document PageToDocument(Page page)
+        {
+            var doc = new Document();
+            doc["Id"] = page.Id;
+            doc["Title"] = page.Title;
+            doc["Description"] = page.Description;
+            doc["Content"] = page.Content;
+            doc["Keywords"] = page.Keywords;
+            doc["Slug"] = page.Slug;
+            doc["Parent"] = page.Parent;
+            doc["IsFrontPage"] = page.IsFrontPage;
+            doc["ShowInList"] = page.ShowInList;
+            doc["IsPublished"] = page.IsPublished;
+            doc["DateCreated"] = page.DateCreated;
+            doc["DateModified"] = page.DateModified;
+
+            return doc;
+        }
+
         private BlogEngine.Core.Page DocumentToPage(Document doc)
         {
-            return (Page)doc["Page"];
-            
-            //return page = new Page
-            //{
-            //    Title = doc[""],
-            //    Description = doc[""],
-            //    Content = doc[""],
-            //    Keywords = doc[""],
-            //    Slug = doc[""],
-            //    Parent = doc[""],
-            //    AbsoluteLink = doc[""],
-            //};
-
-            //return null;
+            return  new Page
+            {
+                Id = (Guid)doc["Id"],
+                Title = (string)doc["Title"],
+                Description = (string)doc["Description"],
+                Content = (string)doc["Content"],
+                Keywords = (string)doc["Keywords"],
+                Slug = (string)doc["Slug"],
+                Parent = (Guid)(doc["Parent"] ?? Guid.Empty),
+                IsFrontPage = (bool)(doc["IsFrontPage"] ?? false),
+                ShowInList = (bool)(doc["ShowInList"] ?? false),
+                IsPublished = (bool)(doc["IsPublished"] ?? false),
+                DateCreated = (DateTime)doc["DateCreated"],
+                DateModified = (DateTime)doc["DateModified"],
+            };
         }
 
     }
