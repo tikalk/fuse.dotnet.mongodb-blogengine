@@ -92,11 +92,6 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
-        public override object LoadFromDataStore(BlogEngine.Core.DataStore.ExtensionType exType, string exId)
-        {
-            throw new NotImplementedException();
-        }
-
         public override System.Collections.Specialized.StringCollection LoadPingServices()
         {
             throw new NotImplementedException();
@@ -108,17 +103,7 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
-        public override void RemoveFromDataStore(BlogEngine.Core.DataStore.ExtensionType exType, string exId)
-        {
-            throw new NotImplementedException();
-        }
-
         public override void SavePingServices(System.Collections.Specialized.StringCollection services)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void SaveToDataStore(BlogEngine.Core.DataStore.ExtensionType exType, string exId, object settings)
         {
             throw new NotImplementedException();
         }
