@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlogEngine.Web", "BlogEngine.Web\", "{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "2.0"
+		Debug.AspNetCompiler.VirtualPath = "/BlogEngine.Web"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\tikal\fuse.dotnet.mongodb-blogengine\BlogEngine.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\BlogEngine.Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/BlogEngine.Web"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\tikal\fuse.dotnet.mongodb-blogengine\BlogEngine.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\BlogEngine.Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51768"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Debug|.NET.ActiveCfg = Debug|.NET
+		{2123CAC5-0B8E-42CE-A1D0-EBE9A9079506}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

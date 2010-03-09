@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin1.master.cs" Inherits="admin_admin" %>
+<%@ Register Src="menu.ascx" TagName="menu" TagPrefix="uc1" %>
+<%@ Import Namespace="BlogEngine.Core" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="height: 100%;">
+<head id="Head1" runat="server">
+    <title>BlogEngine.NET Admin</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="~/pics/blogengine.ico" type="image/x-icon"/>
+</head>
+<body>
+    <table style="height: 100%; width: 100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td id="leftColumn"></td>
+            <td style="height: 100%" valign="top">             
+                <table style="height: 100%; width: 100%" cellpadding="0" cellspacing="0">
+                    <tr valign="top">
+                        <td>
+                          <form id="form1" runat="server">
+                            <table class="banner" cellpadding="10px" cellspacing="0" >
+                                <tr>
+                                <td valign="top" style="width:20px;"></td>
+                                    <td valign="middle">
+                                    <h1><%=Resources.labels.administrationPanel %></h1>                                    
+                                    </td>
+                                     <td valign="middle">
+                                    </td>                                    
+                                    <td valign="top" align="right" style="width:150px">
+                                    <a href="<%=Utils.RelativeWebRoot %>"><%=Resources.labels.goToFrontPage %></a>
+                                    </td>
+                                    <td valign="top" align="right" style="width:50px">
+                                    <asp:LoginStatus ID="LoginStatus1" runat="server" SkinID="adminLoginStatus"  />
+                                    </td>
+                                </tr>
+                            </table>
+                            <div id="blogTitle">
+                            </div>
+                            <div style="padding: 4px 18px">
+                                <table id="contentTable" cellspacing="0">
+                                    <tr>
+                                        <td valign="top" style="width:100%">
+                                        
+                                            <div style="padding-right: 18px; margin-bottom: 1em;">
+                                            
+                                               <div class="tabs" style="width:100%">
+                                                  <uc1:menu ID="Menu1" runat="server" />
+                                                </div>
+                                                
+                                                  <div class="main">                                                  
+                                                       <asp:ContentPlaceHolder ID="cphAdmin" runat="server" />                                                  
+                                                  </div>                                              
+                                                
+                                            </div>
+                                        </td>
+                                        <td valign="top">
+                                            <!--<div class="rightSidebar">
+                                              <asp:ContentPlaceHolder ID="rightAdmin" runat="server" />                                                  
+                                            </div>-->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>                            
+                          </form>
+                        </td>
+                    </tr>
+                    <tr>
+                      <!-- Footer -->
+                        <td valign="bottom">
+                        <div id="footer">
+                            <form id="paypal" action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post" style="float:left;margin-left:10px">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <a href="http://www.paypal.com" onclick="document.getElementById('paypal').submit();return false;">Make a donation</a>
+                            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----" />
+                            </form>                        
+                            
+                              <a href="http://dotnetblogengine.net">BlogEngine.NET <%=BlogSettings.Instance.Version() %></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- End Footer -->
+                </table>                                
+                
+            </td>
+            <td id="rightColumn"></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CommentFilters">
+  <Version>1.0</Version>
+  <Priority>999</Priority>
+  <Description>Comment Filters</Description>
+  <Author>&lt;a href="http://dotnetblogengine.net"&gt;BlogEngine.NET&lt;/a&gt;</Author>
+  <AdminPage />
+  <Enabled>true</Enabled>
+  <Settings>
+    <Index>0</Index>
+    <Name>Filters</Name>
+    <Help />
+    <Delimiter>44</Delimiter>
+    <Parameters>
+      <Name>ID</Name>
+      <Label>ID</Label>
+      <MaxLength>20</MaxLength>
+      <Required>true</Required>
+      <KeyField>true</KeyField>
+      <Values>7b46964f-04a2-4387-9634-2697bf3e0900</Values>
+      <ParamType>Integer</ParamType>
+      <SelectedValue />
+    </Parameters>
+    <Parameters>
+      <Name>Action</Name>
+      <Label>Action</Label>
+      <MaxLength>100</MaxLength>
+      <Required>false</Required>
+      <KeyField>false</KeyField>
+      <Values>Block</Values>
+      <ParamType>String</ParamType>
+      <SelectedValue />
+    </Parameters>
+    <Parameters>
+      <Name>Subject</Name>
+      <Label>Subject</Label>
+      <MaxLength>100</MaxLength>
+      <Required>false</Required>
+      <KeyField>false</KeyField>
+      <Values>Author</Values>
+      <ParamType>String</ParamType>
+      <SelectedValue />
+    </Parameters>
+    <Parameters>
+      <Name>Operator</Name>
+      <Label>Operator</Label>
+      <MaxLength>100</MaxLength>
+      <Required>false</Required>
+      <KeyField>false</KeyField>
+      <Values>Contains</Values>
+      <ParamType>String</ParamType>
+      <SelectedValue />
+    </Parameters>
+    <Parameters>
+      <Name>Filter</Name>
+      <Label>Filter</Label>
+      <MaxLength>100</MaxLength>
+      <Required>false</Required>
+      <KeyField>false</KeyField>
+      <Values>Busby</Values>
+      <ParamType>String</ParamType>
+      <SelectedValue />
+    </Parameters>
+    <KeyField>ID</KeyField>
+    <IsScalar>false</IsScalar>
+    <Hidden>false</Hidden>
+    <ShowAdd>true</ShowAdd>
+    <ShowEdit>true</ShowEdit>
+    <ShowDelete>true</ShowDelete>
+  </Settings>
+  <ShowSettings>true</ShowSettings>
+</ManagedExtension>

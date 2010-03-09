@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CodeFormatterExtension">
+  <Version>0.1</Version>
+  <Priority>0</Priority>
+  <Description>Converts text to formatted syntax highlighted code (beta).</Description>
+  <Author>www.manoli.net</Author>
+  <AdminPage />
+  <Enabled>true</Enabled>
+  <ShowSettings>true</ShowSettings>
+</ManagedExtension>

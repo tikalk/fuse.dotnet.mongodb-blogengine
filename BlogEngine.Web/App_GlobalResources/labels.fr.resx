@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="add" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="addComment" xml:space="preserve">
+    <value>Ajouter un commentaire</value>
+  </data>
+  <data name="addCustomCodeToHeader" xml:space="preserve">
+    <value>Ajouter du texte spécifique à la section HEAD du code HTML</value>
+  </data>
+  <data name="add_Entry" xml:space="preserve">
+    <value>Ajouter un billet</value>
+  </data>
+  <data name="administrationPanel" xml:space="preserve">
+    <value>Panneau de contrôle</value>
+  </data>
+  <data name="advanced" xml:space="preserve">
+    <value>Avancé</value>
+  </data>
+  <data name="advancedSettings" xml:space="preserve">
+    <value>Paramètres avancés</value>
+  </data>
+  <data name="alternateFeedUrl" xml:space="preserve">
+    <value>Fil de remplacement</value>
+  </data>
+  <data name="approve" xml:space="preserve">
+    <value>Approuver</value>
+  </data>
+  <data name="approveallcomments" xml:space="preserve">
+    <value>Approuver tous les commentaires de billet</value>
+  </data>
+  <data name="archive" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="areYouSure" xml:space="preserve">
+    <value>Etes vous sur de vouloir {0} {1}?</value>
+  </data>
+  <data name="attachFile" xml:space="preserve">
+    <value>Joindre un fichier</value>
+  </data>
+  <data name="author" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="avatars" xml:space="preserve">
+    <value>Avatars</value>
+  </data>
+  <data name="basic" xml:space="preserve">
+    <value>Basique</value>
+  </data>
+  <data name="beTheFirstToRate" xml:space="preserve">
+    <value>Soyez le premier à noter ce billet</value>
+  </data>
+  <data name="blogMLDescription" xml:space="preserve">
+    <value>BlogEngine.NET emploie BlogML comme format pour l'exportation. L'importation supporte à la fois  BlogML et RSS.</value>
+  </data>
+  <data name="blogroll" xml:space="preserve">
+    <value>Autres blogs</value>
+  </data>
+  <data name="buttonText" xml:space="preserve">
+    <value>Texte du bouton</value>
+  </data>
+  <data name="categories" xml:space="preserve">
+    <value>Catégories</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="closeCommetsAfter" xml:space="preserve">
+    <value>Bloquer les commentaires après</value>
+  </data>
+  <data name="combine" xml:space="preserve">
+    <value>Combinaison</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>Commentaire</value>
+  </data>
+  <data name="commentLabelText" xml:space="preserve">
+    <value>Texte de l'étiquette de commentaires</value>
+  </data>
+  <data name="comments" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+  <data name="commentsAreClosed" xml:space="preserve">
+    <value>Les commentaires sont clos</value>
+  </data>
+  <data name="commentWasSaved" xml:space="preserve">
+    <value>Le commentaire a été enregistré. Merci de votre feed-back</value>
+  </data>
+  <data name="contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="contactForm" xml:space="preserve">
+    <value>Formulaire de contact</value>
+  </data>
+  <data name="controls" xml:space="preserve">
+    <value>Contrôles</value>
+  </data>
+  <data name="country" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="createNewUser" xml:space="preserve">
+    <value>Créer un nouvel utilisateur</value>
+  </data>
+  <data name="currentlyRated" xml:space="preserve">
+    <value>Actuellement noté {0} par {1} personne(s)</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="defaultFeedOutput" xml:space="preserve">
+    <value>Format de fil par défaut</value>
+  </data>
+  <data name="defaultTextShownInSearchField" xml:space="preserve">
+    <value>Texte affiché par défaut dans la boite de recherche</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="displayCommentsOnRecentPosts" xml:space="preserve">
+    <value>Afficher les commentaires</value>
+  </data>
+  <data name="displayRatingsOnRecentPosts" xml:space="preserve">
+    <value>Afficher les notes</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="emailAddress" xml:space="preserve">
+    <value>Adresse e-mail</value>
+  </data>
+  <data name="enableAttachments" xml:space="preserve">
+    <value>Autoriser les pièces jointes</value>
+  </data>
+  <data name="enableCoComments" xml:space="preserve">
+    <value>Autoriser les coComments</value>
+  </data>
+  <data name="enableComments" xml:space="preserve">
+    <value>Autoriser les commentaires</value>
+  </data>
+  <data name="enableCommentsDescription" xml:space="preserve">
+    <value>Si les commentaires ne sont pas activés, personne ne peut écrire de commentaire sur aucun billet</value>
+  </data>
+  <data name="enableCommentSearch" xml:space="preserve">
+    <value>Activer la recherche dans les commentaires</value>
+  </data>
+  <data name="enableCommentsModeration" xml:space="preserve">
+    <value>Modérer les commentaires</value>
+  </data>
+  <data name="enableGravatars" xml:space="preserve">
+    <value>Autoriser les Gravatars</value>
+  </data>
+  <data name="enableHttpCompression" xml:space="preserve">
+    <value>Activer la compression HTTP</value>
+  </data>
+  <data name="enableHttpCompressionDescription" xml:space="preserve">
+    <value>Accélère le chargement des pages (conseillé).</value>
+  </data>
+  <data name="enableOpenSearch" xml:space="preserve">
+    <value>Activer OpenSearch</value>
+  </data>
+  <data name="enableOpenSearchDescription" xml:space="preserve">
+    <value>Ajoute la fonctionnalité de recherche à tous les nouveaux navigateurs (conseillé).</value>
+  </data>
+  <data name="enableRating" xml:space="preserve">
+    <value>Autoriser la notation des billets</value>
+  </data>
+  <data name="enableReferrerTracking" xml:space="preserve">
+    <value>Activer le suivi des liens entrants</value>
+  </data>
+  <data name="enableSearchHighlight" xml:space="preserve">
+    <value>Activer la mise en valeur de la recherche</value>
+  </data>
+  <data name="enableSearchHighlightDescription" xml:space="preserve">
+    <value>Colorier les mots recherchés</value>
+  </data>
+  <data name="enableSsl" xml:space="preserve">
+    <value>Autoriser SSL</value>
+  </data>
+  <data name="endorsment" xml:space="preserve">
+    <value>Lien de soutien</value>
+  </data>
+  <data name="enforce" xml:space="preserve">
+    <value>Imposer</value>
+  </data>
+  <data name="export" xml:space="preserve">
+    <value>Exporter</value>
+  </data>
+  <data name="formMessage" xml:space="preserve">
+    <value>Message du formulaire</value>
+  </data>
+  <data name="goToFrontPage" xml:space="preserve">
+    <value>Retour à l'accueil</value>
+  </data>
+  <data name="handleWwwSubdomain" xml:space="preserve">
+    <value>www politique de sous domaine</value>
+  </data>
+  <data name="home" xml:space="preserve">
+    <value>Accueil</value>
+    <comment>As used for linking to the front-page</comment>
+  </data>
+  <data name="htmlHeadSection" xml:space="preserve">
+    <value>Entête HTML</value>
+  </data>
+  <data name="ignore" xml:space="preserve">
+    <value>Ignorer</value>
+  </data>
+  <data name="import" xml:space="preserve">
+    <value>Importer</value>
+  </data>
+  <data name="isFrontPage" xml:space="preserve">
+    <value>Est la page d'accueil</value>
+  </data>
+  <data name="keywords" xml:space="preserve">
+    <value>Mots clés</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>Choix de la langue</value>
+  </data>
+  <data name="languageCode" xml:space="preserve">
+    <value>Code langue</value>
+  </data>
+  <data name="latitude" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="livePreview" xml:space="preserve">
+    <value>Aperçu immédiat</value>
+  </data>
+  <data name="longtitude" xml:space="preserve">
+    <value>Longitude</value>
+  </data>
+  <data name="maxLengthOfItems" xml:space="preserve">
+    <value>Longueur maxi des éléments</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="monster" xml:space="preserve">
+    <value>Monster</value>
+  </data>
+  <data name="more" xml:space="preserve">
+    <value>Plus</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="none" xml:space="preserve">
+    <value>Ne pas montrer</value>
+  </data>
+  <data name="noParent" xml:space="preserve">
+    <value>Pas de parent</value>
+  </data>
+  <data name="notifyOnNewComments" xml:space="preserve">
+    <value>Notifier quand de nouveaux commentaires sont ajoutés</value>
+  </data>
+  <data name="notRatedYet" xml:space="preserve">
+    <value>Pas encore noté</value>
+  </data>
+  <data name="numberOfComments" xml:space="preserve">
+    <value>Nombre de commentaires</value>
+  </data>
+  <data name="numberOfDisplayedItems" xml:space="preserve">
+    <value>Nombre d'éléments affichés</value>
+  </data>
+  <data name="numberOfPosts" xml:space="preserve">
+    <value>Nombre de billets</value>
+  </data>
+  <data name="page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="pages" xml:space="preserve">
+    <value>Pages</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="portNumber" xml:space="preserve">
+    <value>Numéro de port</value>
+  </data>
+  <data name="portNumberDescription" xml:space="preserve">
+    <value>Le standard est 25</value>
+  </data>
+  <data name="possibleSpam" xml:space="preserve">
+    <value>Spam probable</value>
+  </data>
+  <data name="post" xml:space="preserve">
+    <value>Billet</value>
+  </data>
+  <data name="postPerPage" xml:space="preserve">
+    <value>Billets par page</value>
+  </data>
+  <data name="posts" xml:space="preserve">
+    <value>Billets</value>
+  </data>
+  <data name="postsPerFeed" xml:space="preserve">
+    <value>Entrées par fil</value>
+  </data>
+  <data name="publish" xml:space="preserve">
+    <value>Publier</value>
+  </data>
+  <data name="raters" xml:space="preserve">
+    <value>Noteurs</value>
+  </data>
+  <data name="rating" xml:space="preserve">
+    <value>Notation</value>
+  </data>
+  <data name="recentComments" xml:space="preserve">
+    <value>Commentaires récents</value>
+  </data>
+  <data name="recentPosts" xml:space="preserve">
+    <value>Billets récents</value>
+  </data>
+  <data name="referrer" xml:space="preserve">
+    <value>Lien entrant</value>
+  </data>
+  <data name="referrers" xml:space="preserve">
+    <value>Liens entrants</value>
+  </data>
+  <data name="relatedPosts" xml:space="preserve">
+    <value>Billets liés</value>
+  </data>
+  <data name="remove" xml:space="preserve">
+    <value>Retirer</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="saveComment" xml:space="preserve">
+    <value>Enregistrer les commentaires</value>
+  </data>
+  <data name="savePage" xml:space="preserve">
+    <value>Enregistrer la page</value>
+  </data>
+  <data name="savePost" xml:space="preserve">
+    <value>Enregistrer le billet</value>
+  </data>
+  <data name="saveSettings" xml:space="preserve">
+    <value>Enregistrer les paramètres</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>Recherche</value>
+  </data>
+  <data name="searchField" xml:space="preserve">
+    <value>Champ de recherche</value>
+  </data>
+  <data name="searchFieldText" xml:space="preserve">
+    <value>Texte du champ de recherche</value>
+  </data>
+  <data name="searchResultsFor" xml:space="preserve">
+    <value>Résultats de recherche pour</value>
+  </data>
+  <data name="selectDay" xml:space="preserve">
+    <value>Choix du jour</value>
+  </data>
+  <data name="selectParent" xml:space="preserve">
+    <value>Sélectionner le parent</value>
+  </data>
+  <data name="sendCommentEmail" xml:space="preserve">
+    <value>Envoyer un mail de commentaire</value>
+  </data>
+  <data name="separateTagsWitComma" xml:space="preserve">
+    <value>Séparer les tags par des virgules</value>
+  </data>
+  <data name="settings" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="showCountryChooser" xml:space="preserve">
+    <value>Afficher le sélecteur de pays</value>
+  </data>
+  <data name="showCountryChooserDescription" xml:space="preserve">
+    <value>Si le sélecteur de pays n'est pas affiché, aucun drapeau ne peut être affiché à coté des commentaires</value>
+    <comment>If the country chooser isn't shown, no flag can be shown on each comment.</comment>
+  </data>
+  <data name="showDescriptionInPostList" xml:space="preserve">
+    <value>Montrer seulement la description des billets</value>
+  </data>
+  <data name="showInList" xml:space="preserve">
+    <value>Montrer dans la liste</value>
+  </data>
+  <data name="showLivePreview" xml:space="preserve">
+    <value>Afficher l'aperçu immédiat</value>
+  </data>
+  <data name="showRelatedPosts" xml:space="preserve">
+    <value>Afficher les billets liés</value>
+  </data>
+  <data name="subject" xml:space="preserve">
+    <value>Sujet</value>
+  </data>
+  <data name="subscribe" xml:space="preserve">
+    <value>Souscrire</value>
+  </data>
+  <data name="thankYouMessage" xml:space="preserve">
+    <value>Message de remerciement</value>
+  </data>
+  <data name="theComment" xml:space="preserve">
+    <value>le commentaire</value>
+  </data>
+  <data name="theme" xml:space="preserve">
+    <value>Thème</value>
+  </data>
+  <data name="thePost" xml:space="preserve">
+    <value>le billet</value>
+  </data>
+  <data name="thereAreXDrafts" xml:space="preserve">
+    <value>Il y a {0} billet(s) non publié(s)</value>
+  </data>
+  <data name="timeStampPostLinks" xml:space="preserve">
+    <value>Ajouter la date aux liens de billet</value>
+  </data>
+  <data name="timezone" xml:space="preserve">
+    <value>Fuseau horaire</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="trimStylesheet" xml:space="preserve">
+    <value>Compresser les feuilles de style</value>
+  </data>
+  <data name="trimStylesheetDescription" xml:space="preserve">
+    <value>Réduit toutes les feuilles de style d'un thème en supprimant les espaces à l'exécution.</value>
+  </data>
+  <data name="unapprovedcomments" xml:space="preserve">
+    <value>Commentaires non approuvés</value>
+  </data>
+  <data name="updateFrequenzy" xml:space="preserve">
+    <value>Fréquence de mise à jour (en minutes)</value>
+  </data>
+  <data name="uploadFile" xml:space="preserve">
+    <value>Transmettre un fichier</value>
+  </data>
+  <data name="uploadImage" xml:space="preserve">
+    <value>Transférer une image</value>
+  </data>
+  <data name="userName" xml:space="preserve">
+    <value>Identifiant</value>
+  </data>
+  <data name="users" xml:space="preserve">
+    <value>Utilisateurs</value>
+  </data>
+  <data name="website" xml:space="preserve">
+    <value>Site Internet</value>
+  </data>
+  <data name="willShowGravatar" xml:space="preserve">
+    <value>Affichera votre icône {0}</value>
+  </data>
+  <data name="wrote" xml:space="preserve">
+    <value>a écrit</value>
+  </data>
+  <data name="youAlreadyRated" xml:space="preserve">
+    <value>Vous avez déjà noté ce billet</value>
+  </data>
+</root>

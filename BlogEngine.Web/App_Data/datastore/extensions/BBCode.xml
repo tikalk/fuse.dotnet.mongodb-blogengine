@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ManagedExtension xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="BBCode">
+  <Version>1.0</Version>
+  <Priority>0</Priority>
+  <Description>Converts BBCode to XHTML in the comments</Description>
+  <Author>&lt;a href="http://dotnetblogengine.net"&gt;BlogEngine.NET&lt;/a&gt;</Author>
+  <AdminPage />
+  <Enabled>true</Enabled>
+  <Settings>
+    <Index>0</Index>
+    <Name>BBCode</Name>
+    <Help>Converts BBCode to XHTML in the comments. Close tag is optional.</Help>
+    <Delimiter>44</Delimiter>
+    <Parameters>
+      <Name>Code</Name>
+      <Label>Code</Label>
+      <MaxLength>20</MaxLength>
+      <Required>true</Required>
+      <KeyField>false</KeyField>
+      <Values>b</Values>
+      <Values>i</Values>
+      <Values>u</Values>
+      <Values>quote</Values>
+      <ParamType>String</ParamType>
+      <SelectedValue />
+    </Parameters>
+    <Parameters>
+      <Name>OpenTag</Name>
+      <Label>Open Tag</Label>
+      <MaxLength>150</MaxLength>
+      <Required>true</Required>
+      <KeyField>false</KeyField>
+      <Values>strong</Values>
+      <Values>em</Values>
+      <Values>span style="text-decoration:underline"</Values>
+      <Values>cite title="Quote"</Values>
+      <ParamType>String</ParamType>
+      <SelectedValue />
+    </Parameters>
+    <Parameters>
+      <Name>CloseTag</Name>
+      <Label>Close Tag</Label>
+      <MaxLength>100</MaxLength>
+      <Required>false</Required>
+      <KeyField>false</KeyField>
+      <Values />
+      <Values />
+      <Values>span</Values>
+      <Values>cite</Values>
+      <ParamType>String</ParamType>
+      <SelectedValue />
+    </Parameters>
+    <KeyField>Code</KeyField>
+    <IsScalar>false</IsScalar>
+    <Hidden>false</Hidden>
+    <ShowAdd>true</ShowAdd>
+    <ShowEdit>true</ShowEdit>
+    <ShowDelete>true</ShowDelete>
+  </Settings>
+  <ShowSettings>true</ShowSettings>
+</ManagedExtension>
