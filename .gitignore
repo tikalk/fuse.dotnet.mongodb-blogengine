@@ -5,3 +5,4 @@ MongoDBBlogProviderTest/bin/
 MongoDBBlogProviderTest/obj/
 TestResults/
 BlogEngine.Web/
+TestResult.xml
