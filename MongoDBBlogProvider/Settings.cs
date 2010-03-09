@@ -21,6 +21,12 @@ namespace Tikal
                     dic.Add((string)el["name"], (string)el["value"]);
                 }
             }
+
+            // ensure defaults
+
+            if (dic["Theme"] == null)
+                dic["Theme"] = "Standard";
+
             return dic;
         }
 

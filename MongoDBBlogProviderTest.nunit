@@ -1,0 +1,6 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Default" appbase="C:\tikal\fuse.dotnet.mongodb-blogengine\MongoDBBlogProviderTest\bin\Debug" />
+  <Config name="Default" binpathtype="Auto">
+    <assembly path="MongoDBBlogProviderTest.dll" />
+  </Config>
+</NUnitProject>

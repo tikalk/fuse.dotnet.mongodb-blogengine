@@ -17,12 +17,19 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
+<<<<<<< HEAD
         public override void DeletePage(BlogEngine.Core.Page page)
         {
             throw new NotImplementedException();
         }
 
 
+=======
+        public override void DeletePost(BlogEngine.Core.Post post)
+        {
+            throw new NotImplementedException();
+        }
+>>>>>>> c8f290fa8f2d548c51d3ed13ddafed1e0edc0561
 
         public override void DeleteProfile(BlogEngine.Core.AuthorProfile profile)
         {
@@ -39,7 +46,11 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
+<<<<<<< HEAD
         public override List<BlogEngine.Core.Page> FillPages()
+=======
+        public override List<BlogEngine.Core.Post> FillPosts()
+>>>>>>> c8f290fa8f2d548c51d3ed13ddafed1e0edc0561
         {
             throw new NotImplementedException();
         }
@@ -64,7 +75,11 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
+<<<<<<< HEAD
         public override void InsertPage(BlogEngine.Core.Page page)
+=======
+        public override void InsertPost(BlogEngine.Core.Post post)
+>>>>>>> c8f290fa8f2d548c51d3ed13ddafed1e0edc0561
         {
             throw new NotImplementedException();
         }
@@ -75,11 +90,6 @@ namespace Tikal
         }
 
         public override void InsertReferrer(BlogEngine.Core.Referrer referrer)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override object LoadFromDataStore(BlogEngine.Core.DataStore.ExtensionType exType, string exId)
         {
             throw new NotImplementedException();
         }
@@ -95,17 +105,7 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
-        public override void RemoveFromDataStore(BlogEngine.Core.DataStore.ExtensionType exType, string exId)
-        {
-            throw new NotImplementedException();
-        }
-
         public override void SavePingServices(System.Collections.Specialized.StringCollection services)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void SaveToDataStore(BlogEngine.Core.DataStore.ExtensionType exType, string exId, object settings)
         {
             throw new NotImplementedException();
         }
@@ -120,7 +120,11 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
+<<<<<<< HEAD
         public override BlogEngine.Core.Page SelectPage(Guid id)
+=======
+        public override BlogEngine.Core.Post SelectPost(Guid id)
+>>>>>>> c8f290fa8f2d548c51d3ed13ddafed1e0edc0561
         {
             throw new NotImplementedException();
         }
@@ -145,7 +149,11 @@ namespace Tikal
             throw new NotImplementedException();
         }
 
+<<<<<<< HEAD
         public override void UpdatePage(BlogEngine.Core.Page page)
+=======
+        public override void UpdatePost(BlogEngine.Core.Post post)
+>>>>>>> c8f290fa8f2d548c51d3ed13ddafed1e0edc0561
         {
             throw new NotImplementedException();
         }
